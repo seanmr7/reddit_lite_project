@@ -1,0 +1,9 @@
+<h1>Reddit-Lite Home Page</h1>
+
+<% @post.each do |post| %>
+  <div>
+    <%= post.title %><br>
+    <%= post.link %>
+    <%= post.user.username %>
+  </div>
+<% end %>
